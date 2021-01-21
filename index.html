@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Meditation, Guided meditation, Beginners guide for meditation, 6 phase meditation, Benifits of meditation">
+    <meta name="description" content="Meditation-App for beginners">
+    <meta name="author" content="Darshan Manohar Hegde">
+    <link rel="icon" href="./dhyana.jpg" type="image/gif" sizes="14x14">
     <link rel="stylesheet" href="./style.css">
     <title>Meditation App</title>
 </head>
 <body>
-    <div class="app">
-        <div class="vid-container">
-            <video loop>
-                <source src="./video/beach.mp4" type="video/mp4"/>
-            </video>
-        </div>
-        <div class="time-selector">
-            <button data-time="600">10 Minutes</button>
-            <button data-time="900">15 Minutes</button>
-            <button data-time="1200">20 Minutes</button>
-        </div>
-        <div class="player-container">
-            <audio class="song">
-                <source src="./sounds/beach.mp3"/>
-            </audio>
+    <div class="container">
+    <div class="cell1">
+        <h2>What is Meditation or Dhyana?</h2>
+        <p>Meditation or Dhanya is a practice where an individual uses a technique – such as mindfulness or focusing the mind on a particular object, thought, or activity – to train attention and awareness, and achieve a mentally clear and emotionally calm, and stable state. Meditation is the habitual process of training your mind to focus and redirect your thoughts.</p> <br>
+        <details>
+            <summary>Why should I do it?</summary>
+            <p>You can use it to increase awareness of yourself and your surroundings. Many people think of it as a way to reduce stress and develop concentration.People also use the practice to develop other beneficial habits and feelings, such as a positive mood and outlook, self-discipline, healthy sleep patterns and even increased pain tolerance.<br> Have a practice of doing meditation atleast 20 minutes a day for best results.
+            </p>
+        </details>
+    </div>
+    <div class="cell2 time-selector">
+        <button data-time="900">15 Minutes</button>
+        <button data-time="1200">20 Minutes</button>
+        <button data-time="1800">30 Minutes</button>
+    </div>
+    <div class="cell3 player-container">
+	    <audio class="song">
+            <source src="./sounds/beach.mp3"/>
+        </audio>
         <img src="./svg/play.svg" alt="play" class="play">
         <svg 
-        class="track-outline"
-        width="453" 
-        height="453" 
-        viewBox="0 0 453 453" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg"
+            class="track-outline"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
         >
             <circle 
                 cx="226.5" 
@@ -40,12 +48,12 @@
             />
         </svg>
         <svg 
-        class="moving-outline"
-        width="453" 
-        height="453" 
-        viewBox="0 0 453 453" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg"
+            class="moving-outline"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
         >
             <circle 
                 cx="226.5" 
@@ -57,15 +65,52 @@
         </svg>
         <img src="./svg/replay.svg" class="replay"></img>
         <h3 class="time-display">0:00</h3>
-    </div>
-        <div class="sound-picker">
-            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
-                <img src="./svg/rain.svg" alt="rain">
-            </button>
-            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
-                <img src="./svg/beach.svg" alt="beach">
-            </button>
+        <div class="vid-container">
+            <video loop>
+                <source src="./video/beach.mp4" type="video/mp4"/>
+            </video>
         </div>
+    </div>
+    <div class="cell4 sound-picker">
+        <button data-sound="./sounds/rain.mp3" 
+        data-video="./video/rain.mp4">
+            <img src="./svg/rain.svg" alt="rain">
+        </button>
+        <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+            <img src="./svg/beach.svg" alt="beach">
+        </button>
+    </div>
+    <div class="cell5">
+        <h3>A Beautiful Beginners guide for meditation By Swami Mukundananda:</h3>
+        <iframe src=" https://www.youtube.com/embed/zmMg1y_ZJxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="guide" title="Beginners guide for meditation"></iframe>
+    </div>
+    <div class="cell6">
+        <h3>For Guided Meditation You can follow this 6 phase meditation by Mindvalley:</h3>
+        <iframe src=" https://www.youtube.com/embed/gRhrdm_1afQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="guide" title="Guided Meditation"></iframe>
+    </div>
+    <div class="cell7">
+        <h2>Benefits of Meditation:</h2>
+        <ol type="1">
+            <li>Reduces Stress</li>
+            <li>Controls Anxiety</li>
+            <li>Promotes Emotional Health</li>
+            <li>Enhances Self-awareness</li>
+            <li>Lengthens Attention Span</li>
+            <li>May reduce age-related Memory Loss</li>
+            <li>Can Generated Kindness</li>
+            <li>May Help Fight Addictions</li>
+            <li>Improves Sleep</li>
+            <li>Helps Control Pain</li>
+            <li>Can Decrease Blood Pressure</li>
+            <li>Accessible Anywhere</li>
+        </ol>
+    </div>
+    <div class="cell8">
+        <h3>Benefits of Meditation By Swami Mukundananda:</h3>
+        <iframe src=" https://www.youtube.com/embed/dSi7P2Ea2vs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="guide" title="Benefits of Meditation By Swami Mukundanand"></iframe>
+    </div>
+    <div class="cell9">
+        <img src="./dhyana.jpg" alt="Dhanya">
     </div>
     <script src="script.js"></script>
 </body>
