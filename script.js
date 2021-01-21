@@ -11,7 +11,7 @@ const timeSelect = document.querySelectorAll(".time-selector button");
 
 const outlineLength = outline.getTotalLength();
 
-let fakeDuration = 600;
+let fakeDuration = 1200;
 
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
