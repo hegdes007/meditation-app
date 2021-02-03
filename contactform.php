@@ -10,4 +10,6 @@
     
     mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
     echo "Thank You!" ;
+    
+    header("Location: contact.html");
 ?>
