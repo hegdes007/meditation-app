@@ -1,0 +1,217 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Ubuntu,serif;
+  overflow-x: hidden;
+  background-image: url(./Animated\ Shape.svg);
+}
+.history {
+  padding: 1vh 25vh 1vh 25vh;
+}
+.css-pc7ote {
+  background-color: #18181836;
+  line-height: 26px;
+  margin: 30px 0;
+  padding: 26px 30px;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-color: #000000;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.images img {
+  margin: 12px;
+}
+
+.logo {
+  width: 21%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html{
+    filter: invert(1) hue-rotate(180deg);
+  }
+   iframe,img, video {
+    filter: invert(1)  hue-rotate(180deg);
+   }
+}
+
+.tab {
+  overflow: hidden;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 1s;
+  font-size: 17px;
+  border-radius: 7px;
+  margin: 2px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: white;
+  background-color: rgb(7, 7, 7);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 12px;
+  margin: 10px;
+}
+iframe {
+  width: 100%;
+  height: 68vh;
+  padding-right: 5px;
+}
+
+.timer-container {
+  position: relative;
+  height: 60vh;
+}
+.timer-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  object-fit: fill;
+}
+.time-selector,
+.sound-picker,
+.player-container {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-container {
+  position: relative;
+  height: 40vh;
+}
+.player-container svg {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+.play {
+  position: absolute;
+  top: 34%;
+  cursor: pointer;
+}
+.replay {
+  position: absolute;
+  bottom: 10%;
+  cursor: pointer;
+}
+.time-display {
+  position: absolute;
+  color: white;
+  top: 10%;
+  font-size: 35px;
+}
+.time-selector button,
+.sound-picker button {
+  color: white;
+  margin: 2px;
+  width: 120px;
+  height: 70px;
+  background: rgba(32, 26, 20, 0.315);
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.time-selector button:hover {
+  color: black;
+  background: wheat;
+}
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+  background: rgb(163, 154, 154);
+}
+.sound-picker button:nth-child(2) {
+  background: rgba(255, 99, 71, 0.664);
+}
+.sound-picker button img {
+  height: 50%;
+}
+.sound-picker button:hover {
+  background: rgba(235, 103, 154, 0.801);
+}
+
+@media screen and (max-width: 575px) {
+  .time-selector,
+  .sound-picker {
+    margin-top: .5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .player-container {
+    height: 35vh;
+  }
+  .time-selector button,
+  .sound-picker button {
+    width: 90px;
+    height: 80px;
+  }
+  .timer-container {
+    height: 70vh;
+  }
+  iframe{
+  height: 50vh;
+  padding-right: 2px;
+  }
+  .logo {
+    width:32%;
+  }
+  .history {
+    padding: 0 5vh 1vh 5vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .history {
+    padding: 0 8vh 1vh 8vh;
+  }
+}

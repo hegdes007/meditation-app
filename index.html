@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Mindfullness, Meditation, Guided meditation, Beginners guide for meditation, 6 phase meditation, Benifits of meditation">
+    <meta name="description" content="Mindfullness. Your personal Meditation-App">
+    <meta name="author" content="Darshan Hegde">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./dhyana-removebg-preview.png" type="image/gif" sizes="14x14">
+    <title>Mindfullness</title>
+  </head>
+  <body>
+    <header>    
+    <nav class="navbar navbar-expand-lg navbar-light my-3">
+        <div class="container-fluid ">
+           <img class="img-fluid rounded mx-3 logo" src="./Logo_edited.jpg" alt="Mindfullness">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./getting started.html">Getting Started</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./beginners guide.html">Beginners Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./benifits.html">Benifits</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item ms-lg-5">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Meditation Timer</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Guided Meditation</button>
+      </div>
+      
+      <div id="London" class="tabcontent">
+        <div class="timer-container container">
+          <div class="row">
+          <div class="vid-container">
+            <video loop>
+                <source src="./video/beach.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="col-sm-3 time-selector">
+          <button data-time="900">15 Minutes</button>
+          <button data-time="1200">20 Minutes</button>
+          <button data-time="1800">30 Minutes</button>
+      </div>
+      <div class="col-sm-6 player-container">
+        <audio class="song">
+              <source src="./sounds/beach.mp3"/>
+          </audio>
+          <img src="./svg/play.svg" alt="play" class="play">
+          <svg 
+              class="track-outline"
+              width="453" 
+              height="453" 
+              viewBox="0 0 453 453" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <circle 
+                  cx="226.5" 
+                  cy="226.5" 
+                  r="216.5" 
+                  stroke="white" 
+                  stroke-width="20"
+              />
+          </svg>
+          <svg 
+              class="moving-outline"
+              width="453" 
+              height="453" 
+              viewBox="0 0 453 453" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <circle 
+                  cx="226.5" 
+                  cy="226.5" 
+                  r="216.5" 
+                  stroke="#018EBA" 
+                  stroke-width="20"
+              />
+          </svg>
+          <img src="./svg/replay.svg" class="replay"></img>
+          <h3 class="time-display">0:00</h3>
+          
+      </div>
+      <div class="col-sm-2 sound-picker">
+          <button data-sound="./sounds/rain.mp3" 
+          data-video="./video/rain.mp4">
+              <img src="./svg/rain.svg" alt="rain">
+          </button>
+          <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+              <img src="./svg/beach.svg" alt="beach">
+          </button>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div id="Paris" class="tabcontent">
+        <iframe src=" https://www.youtube.com/embed/gRhrdm_1afQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </main>
+
+     <footer class="footer fixed-bottom bg-muted py-3" id="footer">
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">Made with &#128157; by Darshan Hegde</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- My Script -->
+    <script src="./app.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="./js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
