@@ -1,4 +1,6 @@
-# Meditation-App
-A Meditation-App with timer, guided meditation and its benifits built using HTML,CSS and JavaScript.
+# Meditation-App named
+# Mindfullness
 
-[Click here to view the live website](https://hegdes007.github.io/Meditation-App/)
+This app gives insights to Mindfulness and its benifits. This also includes the beginners guide, meditation timer and guided meditation.
+
+✅ [Click here to view the live website](https://hopeful-aryabhata-4df454.netlify.app/)
