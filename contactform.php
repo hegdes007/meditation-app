@@ -8,8 +8,8 @@
     $subject = "New form submission in Meditation-App";
     $mailheader = "From: $email \r\n";
     
-    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+    mail($recipient,$subject,$formcontent,$mailheader) or die("Error!");
     echo "Thank You!" ;
     
-    header("Location: contact.html");
+    header("location: contact.html");
 ?>
