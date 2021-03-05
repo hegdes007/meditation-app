@@ -4,7 +4,7 @@
     $message = $_POST['message'];
 
     $formcontent = "User Name: $name \n User Email: $email \n User Message: $message \n";
-    $recipient = "hegdes123@gmail.com";
+    $recipient = "hegdes007@rediffmail.com";
     $subject = "New form submission in Meditation-App";
     $mailheader = "From: $email \r\n";
     
