@@ -9,7 +9,7 @@
     $mailheader = "From: Mindfullness app \r\n";
     $mailheader .= "Reply-To: $email \r\n";
 
-    if ($_POST['submit']) {
+    if (isset($_POST['submit'])) {
         $status = mail('hegdes007@rediffmail.com',$subject,$formcontent,$mailheader);
         if($status)
         {
