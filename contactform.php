@@ -19,5 +19,5 @@
         }
     }
     
-    header("location: contact.html");
+    header("Location: contact.html");
 ?>
