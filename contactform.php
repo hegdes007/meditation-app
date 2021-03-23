@@ -9,8 +9,14 @@
     $mailheader = "From: Mindfullness app \r\n";
     $mailheader .= "Reply-To: $email \r\n";
 
-    mail($recipient,$subject,$formcontent,$mailheader);
-    echo "Thank You!" ;
+    $status = mail($recipient,$subject,$formcontent,$mailheader);
+
+    if($status)
+    {
+    echo '<p>Your mail has been sent!</p>';
+    } else {
+    echo '<p>Something went wrong. Please try again!</p>';
+    }
     
-    header("location: index.html");
+    header("location: contact.html");
 ?>
